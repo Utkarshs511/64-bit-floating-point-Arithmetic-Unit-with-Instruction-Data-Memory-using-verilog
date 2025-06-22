@@ -1,9 +1,7 @@
 # 64-bit-floating-point-Arithmetic-Unit-with-Instruction-Data-Memory-using-verilog
-This repository contains the design and implementation of a **64-bit Floating Point Arithmetic Unit (FPU)** compliant with the **IEEE-754 standard**, developed using **Verilog **. It performs high-precision arithmetic operations—**addition, subtraction, multiplication, and division**—with gate-level modeling for the arithmetic unit and behavioral modeling for memory and control components.
+This repository contains the design and implementation of a **64-bit Floating Point Arithmetic Unit ** compliant with the **IEEE-754 standard**, developed using **Verilog **. It performs high-precision arithmetic operations—**addition, subtraction, multiplication, and division**—with gate-level modeling for the arithmetic unit and behavioral modeling for memory and control components.
+The project is verified through simulation in **Vivado** and demonstrates a architecture suitable for hardware synthesis and educational purposes.
 
-The project is verified through simulation in **Xilinx Vivado** and demonstrates a architecture suitable for hardware synthesis and educational purposes.
-
----
 
 ## Project Overview
 
@@ -15,7 +13,6 @@ The design consists of the following key components:
 - **Arithmetic Unit**: Implements IEEE-754 arithmetic logic using gate-level modeling.
 - **Testbench**: Validates correct functioning of arithmetic operations, memory access, and instruction decoding.
 
----
 
 ## Instruction Format
 
@@ -31,20 +28,18 @@ Each instruction is 16 bits wide and structured as follows:
 
 The format enables simple decoding logic and leaves space for scalability in future revisions.
 
----
 
 ## Arithmetic Unit
 
-The arithmetic unit performs all four operations using **gate-level modeling** and adheres to IEEE-754 standards. Key features include:
+The arithmetic unit performs all four operations using **gate-level modeling** and adheres to IEEE-754 standards. This low-level design provides proper understanding of floating-point arithmetic at the logic gate level.
+Key features include:
 
 - **Exponent Alignment** for operand normalization
 - **Mantissa Operation Logic** specific to each arithmetic function
 - **Normalization & Rounding** of the final result
 - **Support for Special Cases** like zero, infinity, and denormalized numbers (partial)
 
-This low-level design enables a clear understanding of floating-point arithmetic at the logic gate level.
 
----
 
 ## Supporting Modules
 
@@ -55,7 +50,6 @@ While the arithmetic operations are implemented using gate-level modeling, the f
 
 These modules handle data flow and instruction processing in coordination with the arithmetic unit.
 
----
 
 ## Simulation and Testing
 
